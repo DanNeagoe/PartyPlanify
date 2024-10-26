@@ -1,0 +1,202 @@
+body {
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.studentHomePage {
+  height: 100vh;
+  width: 100vw;
+
+  .navBarStudentHomePage {
+    width: 100%;
+  }
+
+  .mainContainerStudentHomePage {
+    width: 100vw;
+    height: 100vh;
+    padding: 13px;
+
+    .infoMessage {
+      font-size: 15px;
+    }
+
+    .infoMessageCoach {
+      font-size: 10px;
+    }
+
+    .secondContainerStudentHomePage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .label-inline {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .copyEvents {
+          margin-right: 20%;
+          margin-left: 0.5%;
+        }
+      }
+
+      .mainCoachInformation {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.038);
+        margin: 5px;
+        border-radius: 10px;
+        margin-top: 0;
+
+        .secondCoachInformation {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 100%;
+        }
+
+        .coachPhotoLeft {
+          width: 120px;
+          height: 120px;
+          border-radius: 10px;
+          object-fit: cover;
+          overflow: hidden;
+        }
+
+        .coachInformationRight {
+          width: 100%;
+          height: 100%;
+          font-size: 120%;
+          margin-left: 15px;
+        }
+
+        .ratingComponent {
+          margin-left: 0.5%;
+        }
+
+        .coachName,
+        .coachTelephone {
+          margin-left: 0.5%;
+          width: 100%;
+          height: auto;
+          font-size: 90%;
+        }
+
+        .leaveButton,
+        .leavePartyButton {
+          margin-left: 0.5%;
+          margin-top: 0.5%;
+          color: #f3f3f3;
+          background-color: #870000;
+          padding: 10px 20px;
+          margin-right: 5px;
+          border-radius: 20px;
+          cursor: pointer;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+
+        .leavePartyButton:hover {
+          background-color: #c9302c;
+        }
+      }
+
+      .agenda {
+        height: 100%;
+      }
+    }
+
+    .partyDetailsContainer {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .partyDetailsContainer h2 {
+      font-size: 1.8em;
+      color: #333;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .partyDetailsContainer p {
+      font-size: 1em;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    .codeInputContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .inputLabel {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .inputField {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 12px;
+    }
+
+    .searchButton {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #5cb85c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .searchButton:hover {
+      background-color: #4cae4c;
+    }
+
+    .errorMessage {
+      color: #d9534f;
+      font-size: 0.9em;
+      margin-top: 8px;
+    }
+
+    .searchBar {
+      overflow: auto;
+      width: 100vw;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .studentHomePage
+    .mainContainerStudentHomePage
+    .secondContainerStudentHomePage
+    .mainCoachInformation
+    .coachPhotoLeft {
+    width: 118px;
+    height: 118px;
+    border-radius: 15px;
+  }
+}

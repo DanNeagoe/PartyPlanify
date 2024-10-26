@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.coachContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+
+  .navBarCoach {
+    width: 100%;
+  }
+
+  .upContainer {
+    margin-top: 1%;
+    width: 100vw;
+
+    .secondUpContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 25%;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+      .noStudents,
+      .performance {
+        font-size: 85%;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+
+      .seeStudents {
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        background-color: #b10f0fc3;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        font-size: 90%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .seeStudents:hover {
+        background-color: #a00e0e;
+      }
+    }
+  }
+
+  .secondDownContainer {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px 0;
+
+    .gyms {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      .noGyms {
+        font-size: 135%;
+        color: #666;
+      }
+
+      .partyDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .partyDetailsContainer > div {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      .partyDetailsContainer div strong {
+        font-weight: 700;
+        color: #222;
+      }
+
+      .deletePartyButton {
+        padding: 8px 12px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #d9534f;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .deletePartyButton:hover {
+        background-color: #c9302c;
+      }
+
+      .addGymButton {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #5cb85c;
+        border: none;
+        color: white;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .addGymButton:hover {
+        background-color: #4cae4c;
+      }
+    }
+  }
+
+  .downContainer {
+    width: 100vw;
+    height: 90vh;
+    padding: 10px;
+
+    .agenda {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.containerSearchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .backButton {
+    align-self: flex-start;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 40px;
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.558);
+    color: white;
+  }
+
+  .message {
+    width: 100%;
+    margin: 0.1vw;
+    font-size: 3vw;
+  }
+
+  .inputSearchBar {
+    margin-top: 2%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+    border-color: red;
+  }
+
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .paragraf {
+      width: 30%;
+      height: auto;
+    }
+    .searchResults {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      border-bottom: 1px solid;
+      border-color: #eee;
+    }
+  }
+}
